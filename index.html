@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" title="Style">
+    <title>Térképész</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <header>
+                <span>Burgonya Térkép</span>
+            </header>
+        </div>
+        <div class="startP-container">
+            <p class="startSite">
+            <h1>
+                Üdvözlünk a Térképész játékban!
+            </h1>
+            <h2>
+                Ha felkészültél, kezdődhet a játék!
+            </h2>
+            </p>
+            <form action="">
+                <input id="startBtn" type="button" value="Start">
+            </form>
+        </div>
+        <div class="seasonTable" style="display: none;">
+            <table>
+                <tbody id="seasonTable_tbody">
+                </tbody>
+                <caption style="caption-side: bottom;" id="sumResult"></caption>
+            </table>
+        </div>
+        <div class="gameTable" style="display: none;">
+            <table id="gameTable_table">
+                <tbody id="gameTable_tbody"></tbody>
+            </table>
+        </div>
+        <div class="challenge-container" style="display: none;">
+            <div class="challengeTable">
+                <table>
+                    <caption id="currentSeason">Jelenlegi évszak: Tavasz (AB)</caption>
+                    <tbody id="challengeTable_tbody">
+                    </tbody>
+                </table>
+            </div>
+            <div class="nextStep">
+                <p class="stepsLeftCount" style="margin-bottom: 1%;">Évszakból hátralévő idő: 0/7</p>
+            </div>
+            <div class="nextElement">
+                <p>Lehelyezendő elem:</p>
+                <form action="">
+                    <input id="RotateBtn" type="button" value="Forgatás">
+                    <input id="MirrorBtn" type="button" value="Tükrözés">
+                </form>
+                <div class="element">
+                    <p class="timer"></p>
+                    <table>
+                        <tbody id="elementBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="play.js"></script>
+
+</html>
